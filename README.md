@@ -1,7 +1,7 @@
 # SimpleRestaurantList
-Hannah Young
-hyoung20@gmail.com
-http://simple-restaurant-list.surge.sh/
+Hannah Young  
+hyoung20@gmail.com  
+http://simple-restaurant-list.surge.sh/  
 
 ## To Run  
 Extract files  
