@@ -21,11 +21,11 @@ On the live site refreshing on /table url will give you a 404
 Clicking the Type sort button multiple times when filtered down to one type will resort it alphabetically  
 
 Would have liked to have added:  
-Added image caching.  
-Additional styling so it doesn't look like generic bootstrap.  
-Better indicator on what filter type you've selected.  
-Choose your theme option.  
-A filter panel instead of a filter bar.  
-Tabs for switching between views instead of buttons.  
-More mobile friendly design.  
+Image caching  
+Additional styling so the layout design isn't generic bootstrap  
+Better indicator on what filter type you've selected  
+Choose your theme option  
+A filter panel instead of a filter bar  
+Tabs for switching between views instead of buttons  
+More mobile friendly design  
 
