@@ -1,0 +1,7 @@
+<div class="row btn-group-toggle filter-btns" data-toggle="buttons">
+  <div *ngFor="let type of restaurantTypes">
+    <label class="btn btn-secondary mr-1" [style.background]="type.color">
+      <input type="radio" name="types" autocomplete="off" (click)="filterType(type)">{{ type.type }}
+    </label>
+  </div>
+</div>

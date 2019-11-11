@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 class="mx-auto text-center">Restaurant List</h1>
+  <ul class="nav nav-pills mx-auto text-center" data-toggle="buttons" (click)="onButtonGroupClick($event)">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">Restaurant List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="table" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}">Restaurant Table</a>
+    </li>
+  </ul>
+  </div>
+<router-outlet></router-outlet>

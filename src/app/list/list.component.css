@@ -1,0 +1,15 @@
+.filter-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1140px;
+  justify-content: space-between;
+}
+
+.type-filter {
+  max-width: 400px;
+}
+
+.sort-btns {
+  max-width: 300px;
+}

@@ -1,0 +1,20 @@
+<div class="product-body pt-3">
+  <div class="filter-bar container-fluid mx-auto text-center mb-3 row">
+    <div class="btn-group btn-group-toggle row sort-btns col-md-6 col-xs-12" data-toggle="buttons" (click)="onButtonGroupClick($event)">
+      <label class="btn btn-secondary col-xs-6">
+        <input type="radio" name="options" autocomplete="off" (click)="sortByType()">Type
+      </label>
+      <label class="btn btn-secondary col-xs-6">
+        <input type="radio" name="options" autocomplete="off" (click)="sortByAlphabetical()">{{ sortNameOrder ? 'A-Z' : 'Z-A'}}
+      </label>
+    </div>
+    <app-filter class="type-filter col-md-12 col-xs-12 mt-1" (getType)="getType($event)"></app-filter>
+  </div>
+  <div class="product-container container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" *ngFor="let restaurant of restaurants">
+        <app-restaurant-card [restaurant]="restaurant"></app-restaurant-card>
+      </div>
+    </div>
+  </div>
+</div>

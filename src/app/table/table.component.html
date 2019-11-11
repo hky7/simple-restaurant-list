@@ -1,0 +1,21 @@
+<div class="table-container mx-auto mt-5">
+  <div class="filter-bar">
+    <app-filter class="type-filter"(getType)="getType($event)"></app-filter>
+  </div>
+  <table class="table restaurant-table table-hover table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th [ngClass]="this.sortNameOrder || this.sortNameOrder === null ? 'down-arrow' : 'up-arrow'" scope="col" (click)="sortByAlphabetical()">Name<img crossorigin="anonymous" class="sort-arrow" src="../../assets/expand-arrow-down.png" /></th>
+        <th scope="col">Phone</th>
+        <th [ngClass]="this.sortTypeOrder || this.sortTypeOrder === null ? 'down-arrow' : 'up-arrow'" scope="col" (click)="sortByType()">Type<img crossorigin="anonymous" class="sort-arrow" src="../../assets/expand-arrow-down.png" /></th>
+      </tr>
+    </thead>
+    <tbody class="restaurant-table-body" *ngFor="let restaurant of restaurants">
+      <tr>
+        <th scope="row">{{restaurant.name}}</th>
+        <td>{{restaurant.phone}}</td>
+        <td [style.background]="getColor(restaurant)">{{restaurant.type}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

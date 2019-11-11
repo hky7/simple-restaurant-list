@@ -1,0 +1,28 @@
+.filter-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1140px;
+  justify-content: center;
+}
+
+.type-filter {
+  max-width: 800px;
+}
+
+.table-container {
+  max-width: 1140px;
+}
+
+.sort-arrow {
+  width: 15px;
+  margin-left: 5px;
+}
+
+.restaurant-table thead {
+  cursor: pointer;
+}
+
+.up-arrow img {
+  content:url('../../assets/expand-arrow-up.png');
+}

@@ -1,0 +1,23 @@
+.filter-btns {
+  justify-content: space-between;
+}
+
+.filter-btns label {
+  border: none;
+  cursor: pointer;
+}
+
+.filter-btns label:hover {
+  color: #333;
+}
+
+.filter-btns label .active {
+  color: #333;
+}
+.filter-btns input {
+  -webkit-appearance: none;
+}
+
+.sort-btns {
+  width: 200px;
+}
